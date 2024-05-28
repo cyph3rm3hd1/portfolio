@@ -10,7 +10,6 @@ body {
     align-items: center;
     height: 100vh; /* Ensures body takes up full viewport height */
     width: 100vw;
-    overflow: hidden; /* Prevents scrolling */
 }
 
 .container {
@@ -38,8 +37,9 @@ nav {
     padding: 0;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin: 0;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .navbar li {
@@ -166,7 +166,14 @@ footer {
         height: 100vh; /* Ensures container takes up full height */
         justify-content: space-between; /* Distributes space within the container */
     }
+    .navbar {
+        justify-content: space-between; /* Adjust spacing for smaller screens */
+    }
 
+    .navbar li a {
+        padding: 5px 11px; /* Reduce padding to fit more items */
+        font-size: 0.9em; /* Adjust font size for readability */
+    }
     header h1 {
         font-size: 2em;
     }
