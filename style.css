@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #424243;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background: linear-gradient(to bottom, rgb(61, 38, 160), white);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    width: 95%;
+    background-color: #333;
+    border-radius: 18px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.navbar {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.navbar li {
+    margin: 10px 0;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 10px 15px;
+    display: block;
+    font-weight: bold;
+}
+
+.navbar li a:hover {
+    background-color: #424243;
+    border-radius: 18px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: fill;
+    align-items: stretch;
+    margin-top: 0;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    margin: 10px 0 5px;
+    font-size: 5em;
+    color: #333;
+    font-weight: bolder;
+}
+header h2 {
+    margin-bottom: 400px;
+    font-size: 4em;
+    color: #333;
+    font-weight: bolder;
+}
+header p {
+    margin: 8;
+    font-size: 1.5em;
+    color: #424243;
+    font-family: 'Courier New', monospace;
+}
+
+footer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-icons li {
+    margin: 0 20px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+}
+
+.social-icons1 {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-icons1 li {
+    margin: 28px;
+ }
+
+.social-icons1 img {
+    width: 200px;
+    height: 200px;
+}
