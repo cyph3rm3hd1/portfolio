@@ -8,16 +8,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* Changed from height to min-height for flexibility */
     width: 100vw;
 }
 
 .container {
     width: 100%;
-    height: 100%;
+    min-height: 100%; /* Changed from height to min-height for flexibility */
     padding: 0;
     background: linear-gradient(to bottom, rgb(61, 38, 160), white);
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,8 +60,9 @@ nav {
 
 .profile-img {
     border-radius: 50%;
-    width: 300px;
-    height: 300px;
+    width: 80%; /* Changed to percentage for responsiveness */
+    max-width: 300px; /* Added max-width for large screens */
+    height: auto; /* Changed to auto for maintaining aspect ratio */
     object-fit: fill;
     align-items: stretch;
     margin-top: 0;
@@ -73,19 +74,21 @@ header {
 
 header h1 {
     margin: 10px 0 5px;
-    font-size: 5em;
+    font-size: 3em; /* Adjusted for better readability on smaller screens */
     color: #333;
     font-weight: bolder;
 }
+
 header h2 {
-    margin-bottom: 400px;
-    font-size: 4em;
+    margin-bottom: 50px; /* Adjusted for better spacing on smaller screens */
+    font-size: 2.5em; /* Adjusted for better readability on smaller screens */
     color: #333;
     font-weight: bolder;
 }
+
 header p {
-    margin: 8;
-    font-size: 1.5em;
+    margin: 8px; /* Fixed incorrect value */
+    font-size: 1.2em; /* Adjusted for better readability on smaller screens */
     color: #424243;
     font-family: 'Courier New', monospace;
 }
@@ -104,12 +107,12 @@ footer {
 }
 
 .social-icons li {
-    margin: 0 20px;
+    margin: 0 10px; /* Adjusted for better spacing on smaller screens */
 }
 
 .social-icons img {
-    width: 40px;
-    height: 40px;
+    width: 30px; /* Adjusted for better readability on smaller screens */
+    height: 30px; /* Adjusted for better readability on smaller screens */
 }
 
 .social-icons1 {
@@ -121,10 +124,35 @@ footer {
 }
 
 .social-icons1 li {
-    margin: 28px;
- }
+    margin: 14px; /* Adjusted for better spacing on smaller screens */
+}
 
 .social-icons1 img {
-    width: 200px;
-    height: 200px;
+    width: 100px; /* Adjusted for better readability on smaller screens */
+    height: 100px; /* Adjusted for better readability on smaller screens */
+}
+
+@media (min-width: 601px) {
+    header h1 {
+        font-size: 5em; /* Original size for larger screens */
+    }
+
+    header h2 {
+        margin-bottom: 400px; /* Original size for larger screens */
+        font-size: 4em; /* Original size for larger screens */
+    }
+
+    header p {
+        font-size: 1.5em; /* Original size for larger screens */
+    }
+
+    .social-icons img {
+        width: 40px; /* Original size for larger screens */
+        height: 40px; /* Original size for larger screens */
+    }
+
+    .social-icons1 img {
+        width: 200px; /* Original size for larger screens */
+        height: 200px; /* Original size for larger screens */
+    }
 }
